@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello World!" />
+
+    <wong.colin.slidingdrawerdemo.SlidingDrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_gravity="bottom"
+        app:direction="0"
+        app:visiableLength="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/up" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/test" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test" />
+        </LinearLayout>
+    </wong.colin.slidingdrawerdemo.SlidingDrawerLayout>
+
+    <wong.colin.slidingdrawerdemo.SlidingDrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:direction="1"
+        app:visiableLength="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/test" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/down" />
+
+        </LinearLayout>
+    </wong.colin.slidingdrawerdemo.SlidingDrawerLayout>
+
+
+    <wong.colin.slidingdrawerdemo.SlidingDrawerLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="left|center_vertical"
+        app:direction="2"
+        app:visiableLength="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLeft"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/test" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/right" />
+        </LinearLayout>
+    </wong.colin.slidingdrawerdemo.SlidingDrawerLayout>
+
+    <wong.colin.slidingdrawerdemo.SlidingDrawerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_gravity="right|center_vertical"
+        app:direction="3"
+        app:visiableLength="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRight"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/test" />
+        </LinearLayout>
+    </wong.colin.slidingdrawerdemo.SlidingDrawerLayout>
+</FrameLayout>
